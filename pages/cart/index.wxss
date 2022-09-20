@@ -1,0 +1,144 @@
+page {
+  padding-bottom: 90rpx;
+}
+
+.iot-revice_address_row .iot-address_btn {
+  padding: 20rpx;
+}
+
+.iot-revice_address_row .iot-address_btn button {
+  width: 60%;
+}
+
+.iot-revice_address_row .iot-user_info_row {
+  display: flex;
+  padding: 20rpx;
+}
+
+.iot-revice_address_row .iot-user_info_row .iot-user_info {
+  flex: 5;
+}
+
+.iot-revice_address_row .iot-user_info_row .iot-user_phone {
+  flex: 3;
+  text-align: right;
+}
+
+.iot-cart_content .iot-cart_title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: var(--themeColor);
+  border-top: 1rpx solid currentColor;
+  border-bottom: 1rpx solid currentColor;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_chk_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_img_wrap image {
+  width: 80%;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_info_wrap .iot-goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_info_wrap .iot-goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_info_wrap .iot-goods_price_wrap .iot-goods_price {
+  color: var(--themeColor);
+  font-size: 34rpx;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_info_wrap .iot-goods_price_wrap .iot-cart_num_tool {
+  display: flex;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_info_wrap .iot-goods_price_wrap .iot-cart_num_tool .iot-num_edit {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #ccc;
+}
+
+.iot-cart_content .iot-cart_main .iot-cart_item .iot-cart_info_wrap .iot-goods_price_wrap .iot-cart_num_tool .iot-goods_num {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iot-footer_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+
+.iot-footer_tool .iot-all_chk_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iot-footer_tool .iot-total_price_wrap {
+  flex: 5;
+  padding-right: 15rpx;
+  text-align: right;
+}
+
+.iot-footer_tool .iot-total_price_wrap .iot-total_price .iot-total_price_text {
+  color: var(--themeColor);
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.iot-footer_tool .iot-order_pay_wrap {
+  flex: 3;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

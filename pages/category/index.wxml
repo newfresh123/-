@@ -1,0 +1,31 @@
+<view class="iot-cates" hover-class="none" hover-stop-propagation="false">
+    <SearchInput></SearchInput>
+    <view class="iot-cates-container" hover-class="none" hover-stop-propagation="false">
+        <scroll-view scroll-y class="iot-left-menu">
+            <view class="iot-menu-item {{index===currentIndex?'iot-active':''}}" hover-class="none"
+                hover-stop-propagation="false" wx:for="{{leftmenulist}}" wx:key="*this"bindtap = "handleitemtap"data-index="{{index}}">
+                {{item}}
+            </view>
+        </scroll-view>
+        <!--右边-->
+        <scroll-view scroll-top="{scrolltop}" scroll-y class="iot-right-content">
+            <view class="iot-goods-group" wx:for="{{rightcontent}}" wx:for-index="index1" wx:for-item="item1">
+                <view class="iot-goods-title">
+                    <text class="iot-delimiter">/</text>
+                    <text class="iot-title">{{item1.cat_name}}</text>
+                    <text class="iot-delimiter">/</text>
+                </view>
+                <view class="iot-goods-list">
+                    <navigator class="iot-navigator" wx:for="{{item1.children}}" wx:for-index="index2"
+                        wx:for-item="item2" wx:key="cat_id" url="/pages/goods-list/index?cid={{item2.cat_id}}">
+                        <image src="{{item2.cat_icon}}" mode="widthFix"></image>
+                        <view class="iot-goods-name">
+                            {{item2.cat_name}}
+                        </view>
+
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

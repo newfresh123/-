@@ -1,0 +1,29 @@
+.iot-first-tab .iot-goods-item {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.iot-first-tab .iot-goods-item .iot-goods-img-wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iot-first-tab .iot-goods-item .iot-goods-img-wrap image {
+  width: 70%;
+}
+.iot-first-tab .iot-goods-info-wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.iot-first-tab .iot-goods-info-wrap .iot-goods-name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.iot-first-tab .iot-goods-info-wrap .iot-goods-price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

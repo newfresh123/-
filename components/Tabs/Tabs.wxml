@@ -1,0 +1,9 @@
+<view class="iot-tabs" >
+    <view class="iot-tabs-title">
+        <view class="iot-title-item {{item.isActive?'active':''}}" wx:for="{{tabs}}" wx:key="id" bindtap="handleitemtab" data-index="{{index}}">
+            {{item.value}}
+        </view>
+    </view>
+    <view class="iot-tabs-content"></view>
+    <slot></slot>
+</view>

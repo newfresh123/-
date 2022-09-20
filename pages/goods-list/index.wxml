@@ -1,0 +1,31 @@
+<SearchInput></SearchInput>
+<Tabs tabs="{{tabs}}" bindtabsitemchange="handletabsitemchange">
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="iot-first-tab">
+            <navigator class="iot-goods-item"
+             wx:for="{{goods_list}}" 
+             wx:key="goods_id"
+             url="/pages/goods-detail/index?goods_id={{item.goods_id}}">
+                <!--left-->
+                <view class="iot-goods-img-wrap">
+                    <image src="{{item.goods_small_logo}}" mode="widthFix">
+                    </image>
+                </view>
+                <!--right-->
+                <view class="iot-goods-info-wrap">
+                    <view class="iot-goods-name">
+                        {{item.goods_name}}
+                    </view>
+                    <view class="iot-goods-price">
+                        ${{item.goods_price}}
+                    </view>
+                </view>
+
+            </navigator>
+        </view>
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}"></block>
+    <block wx:elif="{{tabs[2].isActive}}"></block>
+
+
+</Tabs>

@@ -1,0 +1,6 @@
+<view class="iot-search-input" hover-class="none" hover-stop-propagation="false">
+    <navigator class="" target="" url="/pages/search/index" open-type="navigator" hover-class="navigator-hover" open-type="navigate">
+        搜索
+    </navigator>
+    
+</view>
