@@ -27,3 +27,11 @@ export const delUser = (data) => {
 export const getMenu = (data) => {
     return http.post('/permission/getMenu', data)
 }
+export const getUserInfo = (params) => {
+    return http.get('/user/getUser', params)
+}
+export const getGame = (params) => {
+    console.log(params, 'params')
+    // 返回用户列表
+    return http.get('/user/getGame', params)
+}

@@ -57,7 +57,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .tabs {
-    padding: 20px;
+    padding: 20px,20px,10px,20px;
     .el-tag {
         margin-right: 15px;
         cursor: pointer;

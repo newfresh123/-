@@ -19,7 +19,7 @@ export default {
             {
               path: '/mall',
               name: 'mall',
-              label: '农产品管理',
+              label: '农产品数据',
               icon: 'video-play',
               url: 'Mall.vue'
             },
@@ -31,22 +31,49 @@ export default {
               url: 'User.vue'
             },
             {
-              label: '其他',
+              label: '详细信息',
               icon: 'location',
               children: [
                 {
                   path: '/page1',
                   name: 'page1',
-                  label: '页面1',
+                  label: '农场主详细信息',
                   icon: 'setting',
                   url: 'PageOne.vue'
                 },
                 {
                   path: '/page2',
                   name: 'page2',
-                  label: '页面2',
+                  label: '农场详细信息',
                   icon: 'setting',
                   url: 'PageTwo.vue'
+                },
+                {
+                  path: '/page3',
+                  name: 'page3',
+                  label: '农产品详细信息',
+                  icon: 'setting',
+                  url: 'Product.vue'
+                }
+              ]
+            },
+            {
+              label: '比赛信息',
+              icon: 'location',
+              children: [
+                {
+                  path: '/gameshow',
+                  name: 'GameShow',
+                  label: '比赛展示页',
+                  icon: 'setting',
+                  url: 'GameShow.vue'
+                },
+                {
+                  path: '/gamemanage',
+                  name: 'GameManage',
+                  label: '比赛管理页',
+                  icon: 'setting',
+                  url: 'GameManage.vue'
                 }
               ]
             }
@@ -55,7 +82,7 @@ export default {
           message: '获取成功'
         }
       }
-    } else if (username === '' && password === '') {
+    } else if (username === 'user' && password === 'user') {
       return {
         code: 20000,
         data: {
